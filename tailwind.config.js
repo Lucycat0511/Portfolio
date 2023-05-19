@@ -6,13 +6,15 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       primary: "#F0EBE3",
-      seconday: "#E4DCCF",
+      secondary: "#E4DCCF",
       tertiary: "#7D9D9C",
       quaternary: "#576F72",
       white: "#FFFFFF",
+      black: "#000000",
     },
     fontFamily: {
       display: ["Oswald", "sans-serif"],
