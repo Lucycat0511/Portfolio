@@ -3,8 +3,8 @@ import Button from "./util/Button";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex my-24 items-center">
+    <div className="flex flex-col gap-8 my-24">
+      <div className="flex  items-center">
         <div className="flex flex-col gap-2 mr-auto items-start">
           <p className="text-xl font-light">Hi! I'm Zachary, a</p>
           <h1 className="text-6xl font-semibold font-display">

@@ -23,7 +23,11 @@ export default function ProjectCard({
           rightOrientation ? "mr-auto" : "ml-auto text-right"
         }`}
       >
-        <div className={`flex flex-col gap-4 pl-8 py-4 pr-6`}>
+        <div
+          className={`flex flex-col gap-4 py-4 ${
+            rightOrientation ? "pr-8" : "pl-8"
+          }`}
+        >
           <div className={`flex gap-2 ${!rightOrientation && "ml-auto"}`}>
             {languages.map((language, index) => {
               return (
