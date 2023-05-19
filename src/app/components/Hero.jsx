@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./util/Button";
 
 export default function Hero() {
   return (
@@ -12,27 +13,32 @@ export default function Hero() {
             Web Developer
           </h1>
           <p className="text-xl font-light">based in Hyde Park, NY</p>
-          <button
-            className=" bg-secondary px-6 py-2 rounded-md shadow-md text-md font-light mt-2 hover:bg-quaternary hover:text-white transition-all ease-linear duration-100
-            dark:text-black dark:bg-tertiary dark:hover:bg-secondary dark:hover:text-black"
-          >
-            Resume
-          </button>
+          <Button text="Resume" />
         </div>
 
-        <Image
-          className=" w-2/5 bg-white aspect-square rounded-full object-cover object-center"
-          src="/assets/profile.jpg "
-          alt="profile picture"
-          width={500}
-          height={500}
-        ></Image>
+        <div className="group w-2/5 aspect-square relative">
+          <div
+            className={`w-full aspect-square rounded-2xl  bg-secondary
+          group-hover:translate-x-2 group-hover:translate-y-2
+          transition-all ease-out duration-200`}
+          ></div>
+          <Image
+            className={`group absolute -top-2 -left-2 w-full aspect-square rounded-2xl object-cover object-center
+            group-hover:-translate-x-2 group-hover:-translate-y-2
+            transition-all ease-out duration-200
+            `}
+            src="/assets/profile.jpg "
+            alt="profile picture"
+            width={500}
+            height={500}
+          ></Image>
+        </div>
       </div>
 
-      <div className="self-center flex flex-col items-center">
+      {/* <div className="self-center flex flex-col items-center">
         <p className="text-xl font-medium">Find out more!</p>
         <i className="fa-solid fa-arrow-down"></i>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex gap-20">
+    <footer className="flex gap-20">
       <Image
         className="w-1/12 bg-white aspect-square rounded-full object-cover object-center"
         src="/assets/profile.jpg "
@@ -47,6 +47,6 @@ export default function Footer() {
           </Link>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -24,6 +24,12 @@ module.exports = {
       margin: {
         body: "15%",
       },
+      shadow: {
+        project: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
+      },
+      hover: {
+        rise: "transform: translateY(0.5rem)",
+      },
     },
   },
   plugins: [],
