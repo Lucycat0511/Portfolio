@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="flex items-center h-[70vh]">
       <div className="flex flex-col gap-2 mr-auto items-start">
-        <p className="text-xl font-light">Hi! I'm Zachary, a</p>
+        <p className="text-xl font-light">Hi! I`&apos;`m Zachary, a</p>
         <h1 className="text-6xl font-semibold font-display">
           Front End
           <br />
