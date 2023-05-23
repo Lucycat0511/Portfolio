@@ -1,20 +1,21 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import About from "./components/main/About";
+import Contact from "./components/main/Contact";
+import Footer from "./components/main/Footer";
+import Hero from "./components/main/Hero";
+import Navbar from "./components/main/Navbar";
+import Projects from "./components/main/Projects";
 import DarkModeSwitch from "./components/util/DarkModeSwitch";
-import Journey from "./components/Journey";
-import About from "./components/About";
 
 export default function Home() {
   return (
     <>
       <DarkModeSwitch />
       <Navbar />
-      <main className="flex flex-col gap-56 my-20">
+      <main className="flex flex-col gap-52  mx-body my-8">
         <Hero />
         <About />
         <Projects />
+        <Contact />
       </main>
       <Footer />
     </>

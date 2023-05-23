@@ -1,5 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
+import Head from "next/head";
 
 export const metadata = {
   title: `Zack's Portfolio`,
@@ -16,13 +17,15 @@ export default function RootLayout({ children }) {
     <html lang="en" className="light">
       <Script src="https://kit.fontawesome.com/e2667abf31.js" />
 
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-      />
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+      </head>
 
       <body
-        className="mx-body my-8 font-body bg-primary
+        className="font-body bg-primary
       dark:bg-quaternary
       dark:text-white"
       >

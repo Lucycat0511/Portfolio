@@ -1,20 +1,39 @@
+"use client";
+
+import { useInView } from "react-intersection-observer";
+
 import Image from "next/image";
 
 export default function ProjectCard({
   project: { imgURL, title, description, languages, story },
   rightOrientation,
 }) {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
   return (
-    <div className={`flex h-96 ${rightOrientation && "flex-row-reverse"}`}>
-      <div className="relative w-3/5 bg-secondary rounded-2xl">
+    <div
+      ref={ref}
+      className={`flex h-96 ${rightOrientation && "flex-row-reverse"}
+      ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
+      transition-all ease-out delay-200 duration-1000`}
+    >
+      <div
+        className="relative w-3/5 bg-secondary rounded-2xl
+      dark:bg-tertiary"
+      >
         <Image
-          className={`object-cover bg-secondary h-full w-full absolute aspect-square border-secondary border-2 rounded-2xl
+          className={`object-cover h-full w-full absolute aspect-square border-secondary border-2 rounded-2xl
             hover:-translate-x-2 hover:-translate-y-2
+            dark:border-tertiary
             transition-all ease-out duration-150`}
           src={imgURL}
           alt="project image"
           width={9999}
           height={9999}
+          priority
         ></Image>
       </div>
 

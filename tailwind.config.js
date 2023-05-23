@@ -24,6 +24,18 @@ module.exports = {
       margin: {
         body: "15%",
       },
+      padding: {
+        body: "15%",
+      },
+      animation: {
+        fadeInUp: " fadeInUp 800ms ease-in 1",
+      },
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(16rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],

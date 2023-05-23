@@ -1,9 +1,26 @@
+"use client";
+
+import { useScroll } from "@/app/hooks/useScroll";
 import Link from "next/link";
 
 export default function Navbar() {
+  const scrollDirection = useScroll();
+
   return (
-    <div className="flex items-center">
-      <p className="font-semibold text-md w-20">Zachary</p>
+    <div
+      className={`flex items-center sticky z-20 w-full px-body py-4 bg-primary pt-4 shadow-sm
+    ${scrollDirection === "up" ? "top-0" : "-top-24"}
+    dark:bg-quaternary
+    transition-all ease-linear duration-150 `}
+    >
+      <p
+        className="font-semibold text-md w-20"
+        onClick={() => {
+          scrollHandler();
+        }}
+      >
+        Zachary
+      </p>
       <nav className="grow ">
         <ul className="flex gap-8 justify-center">
           <Link
