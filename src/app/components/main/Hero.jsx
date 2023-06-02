@@ -27,7 +27,7 @@ export default function Hero() {
             group-hover:-translate-x-2 group-hover:-translate-y-2
             transition-all ease-out duration-200
             `}
-          src="/assets/profile.jpeg "
+          src="/assets/profile.jpeg"
           alt="profile picture"
           width={500}
           height={500}
