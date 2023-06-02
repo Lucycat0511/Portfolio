@@ -17,29 +17,29 @@ export default function Navbar() {
       <nav className="grow ">
         <ul className="flex gap-8 justify-center">
           <Link
-            href="#"
-            className="font-light text-md hover:text-quaternary hover:underline hover:font-medium
+            href="/"
+            className="font-light text-md hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             Home
           </Link>
           <Link
-            href="#"
-            className="font-light text-md hover:text-quaternary hover:underline hover:font-medium
+            href="/about"
+            className="font-light text-md hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             About
           </Link>
           <Link
-            href="#"
-            className="font-light text-md hover:text-quaternary hover:underline hover:font-medium
+            href="/my-projects"
+            className="font-light text-md hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             My Projects
           </Link>
           <Link
-            href="#"
-            className="font-light text-md hover:text-quaternary hover:underline hover:font-medium
+            href="/contact"
+            className="font-light text-md hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             Contact

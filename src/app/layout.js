@@ -1,6 +1,8 @@
 import Script from "next/script";
 import "./globals.css";
 import DarkModeSwitch from "./components/util/DarkModeSwitch";
+import Navbar from "./components/main/Navbar";
+import Footer from "./components/main/Footer";
 
 export const metadata = {
   title: `Zack's Portfolio`,
@@ -30,7 +32,9 @@ export default function RootLayout({ children }) {
       dark:text-white"
       >
         <DarkModeSwitch />
-        {children}
+        <Navbar />
+        <main className="flex flex-col gap-52  mx-body my-8">{children}</main>
+        <Footer />
       </body>
     </html>
   );
