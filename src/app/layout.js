@@ -1,6 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
-import Head from "next/head";
+import DarkModeSwitch from "./components/util/DarkModeSwitch";
 
 export const metadata = {
   title: `Zack's Portfolio`,
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
       dark:bg-quaternary
       dark:text-white"
       >
+        <DarkModeSwitch />
         {children}
       </body>
     </html>

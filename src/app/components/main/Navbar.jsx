@@ -13,14 +13,7 @@ export default function Navbar() {
     dark:bg-quaternary
     transition-all ease-linear duration-150 `}
     >
-      <p
-        className="font-semibold text-md w-20"
-        onClick={() => {
-          scrollHandler();
-        }}
-      >
-        Zachary
-      </p>
+      <p className="font-semibold text-md w-20">Zachary</p>
       <nav className="grow ">
         <ul className="flex gap-8 justify-center">
           <Link
