@@ -14,7 +14,7 @@ export default function Navbar() {
     transition-all ease-linear duration-150 `}
     >
       <p className="font-semibold text-md w-20">Zachary</p>
-      <nav className="grow ">
+      <nav className="grow">
         <ul className="flex gap-8 justify-center">
           <Link
             href="/"

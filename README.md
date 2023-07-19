@@ -27,3 +27,5 @@ Feel free to send me an email sometime!</p>
 - create custom logo
 - upload resume
 - add the ability to click on projects and be taken to them externally
+- add a minimum of 2 full projects not included the portfolio
+- replace all lorem ipsum with data

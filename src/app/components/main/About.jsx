@@ -23,40 +23,64 @@ export default function About() {
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
             transition-all ease-out duration-1000`}
           >
-            <p className="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            <p>
+              I wasn’t always interested in web development, nor am I from Hyde
+              Park! I grew up in Toms River, NJ actually. I’ve had a love for
+              building and solving problems from a young age. When I was in
+              middle school, I used to play Minecraft a lot, but I got bored of
+              the same ‘vanilla’ game so began to add “mods.” I would implement
+              new features and soon I wanted to create them myself! I learned
+              Java, installed my first IDE, Eclipse, and began making mods for
+              Minecraft. The rest is history!
             </p>
             <p>
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu
-              fugiateprehenderit in voluptate velit esse cillum dolore eu fugiat
+              After middle school and all throughout highschool, I continued
+              making simple applications, even dabbling in html and C++. I
+              enjoyed it, but thought there was more to the world than sitting
+              inside all day programming. I decided not to pursue a career in
+              Programming and chose to major in Biology. In community college, I
+              learned a lot more by expanding out and trying different subjects
+              of interest. I think my time was well spent and it broadened my
+              horizons! That’s when I took my first Plant Biology class and fell
+              in love with the world of plants!
             </p>
             <p>
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est
-              laborum.eprehenderit in voluptate velit esse cillum dolore eu
-              fugiat
+              I decided to further my career in Botany, and enrolled at the
+              University of Maine. I went on to attain my degree and found the
+              love of my love while I was at it! Her name is Hana, she is the
+              most important person to me and pushes me to this day to pursue my
+              interests. Once I graduated, I still felt unsure, and I needed a
+              masters if I wanted to continue my research. I didn’t have the
+              money and I felt like I needed a change, so I moved to Hyde Park,
+              NY and enrolled at the Culinary Institute of America. Probably not
+              the wisest decision as I was flat out broke, and now have a bit of
+              student loan debt.
             </p>
             <p>
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu
-              fugiateprehenderit in voluptate velit esse cillum dolore eu
-              fugiateprehenderit in voluptate velit esse cillum dolore eu fugiat
+              My time at CIA was splendid and I learned valuable skills that not
+              only apply to the kitchen. Alas, I only stayed for a semester as
+              financials began overwhelm me. I continued to pursue a career in
+              the food industry, working at Beekman Arms, and I enjoy my work!
+              The thing with working in a kitchen is that it’s physically and
+              mentally taxing to a degree that I don’t think I can see myself
+              doing for the rest of my life. *Thus, Web Development walks in.*
             </p>
             <p>
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I needed a career switch and I went with ole reliable. I made a
+              complete circle and went back to programming. I decided to take a
+              different course of action and checked out Web Development, as it
+              is a mix of art and technical skill, a lot like cooking. I started
+              off by taking Angela Yu’s bootcamp course on on Udemy and I fell
+              in love. I watched as Angela explain topics and they blossomed
+              into full web pages before my eyes. That’s when I realized that
+              Web development is also like Botany, and I get the same
+              satisfaction of watching some grow and bloom into a beautiful
+              website. I finished Angela’s bootcamp and went on to get certified
+              through Meta, taking their Front End Developer course. After that
+              experience, I began to build my portfolio, and help friends make
+              websites. Now I look to the future and a hopeful career shift.
             </p>
-            <p>
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            </p>
-            <p>
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+
             {/* Hi! My name is Zachary Maynor. I really enjoy building clean
               looking ad well-put-together websites!
               <br />
@@ -106,8 +130,9 @@ export default function About() {
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
             transition-all ease-out delay-[1500ms] duration-1000`}
             >
-              <i className="devicon-bootstrap-plain text-6xl"></i>
-              <span>Bootstrap</span>
+              <i className="devicon-typescript-plain text-6xl"></i>
+
+              <span>Typescript</span>
             </div>
           </div>
         </div>

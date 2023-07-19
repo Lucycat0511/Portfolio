@@ -1,4 +1,4 @@
-export default function Button({ text }) {
+export default function Button({ children }) {
   return (
     <div
       className="bg-secondary rounded-md w-fit
@@ -10,7 +10,7 @@ export default function Button({ text }) {
     hover:-translate-x-1 hover:-translate-y-1
     transition-all ease-out duration-200`}
       >
-        {text}
+        {children}
       </button>
     </div>
   );

@@ -64,7 +64,7 @@ export default function ContactForm() {
           dark:text-black"
         ></textarea>
         <div className="flex justify-center">
-          <Button text="Submit" />
+          <Button>Submit</Button>
         </div>
       </form>
     </div>

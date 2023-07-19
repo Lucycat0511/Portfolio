@@ -12,7 +12,11 @@ export default function Hero() {
           Web Developer
         </h1>
         <p className="text-xl font-light">based in Hyde Park, NY</p>
-        <Button text="Resume" />
+        <Button>
+          <a href="/assets/Resume.pdf" download>
+            Resume
+          </a>
+        </Button>
       </div>
 
       <div className="group w-2/5 aspect-square relative">
