@@ -16,12 +16,16 @@ export default function ProjectCard({
   return (
     <div
       ref={ref}
-      className={`flex h-96 ${rightOrientation && "flex-row-reverse"}
+      className={`flex flex-col md:flex-row h-96 ${
+        rightOrientation && "md:flex-row-reverse"
+      }
       ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-      transition-all ease-out delay-200 duration-1000`}
+      transition-all ease-out delay-200 duration-1000
+      `}
     >
+      <h2 className="text-xl font-semibold mb-2 md:hidden">{title}</h2>
       <div
-        className="relative w-3/5 bg-secondary rounded-2xl
+        className="relative w-full md:w-3/5 bg-secondary h-full rounded-2xl
       dark:bg-tertiary"
       >
         <Image
@@ -38,16 +42,16 @@ export default function ProjectCard({
       </div>
 
       <div
-        className={`w-2/5 z-10  overflow-clip ${
-          rightOrientation ? "mr-auto" : "ml-auto text-right"
+        className={`w-full md:w-2/5 z-10  overflow-clip ${
+          rightOrientation ? "md:mr-auto" : "md:ml-auto md:text-right"
         }`}
       >
         <div
           className={`flex flex-col gap-4 py-4 ${
-            rightOrientation ? "pr-8" : "pl-8"
+            rightOrientation ? "md:pr-8" : "md:pl-8"
           }`}
         >
-          <div className={`flex gap-2 ${!rightOrientation && "ml-auto"}`}>
+          <div className={`flex gap-2 ${!rightOrientation && "md:ml-auto"}`}>
             {languages.map((language, index) => {
               return (
                 <span key={index} className="bg-tertiary px-2 rounded-md">
@@ -56,7 +60,7 @@ export default function ProjectCard({
               );
             })}
           </div>
-          <h2 className="text-xl font-semibold">{title}</h2>
+          <h2 className="text-xl font-semibold hidden md:block">{title}</h2>
           <p>{description}</p>
           <p>{story}</p>
         </div>

@@ -13,33 +13,33 @@ export default function Navbar() {
     dark:bg-quaternary
     transition-all ease-linear duration-150 `}
     >
-      <p className="font-semibold text-md w-20">Zachary</p>
+      <p className="font-semibold text-md">Zachary</p>
       <nav className="grow">
-        <ul className="flex gap-8 justify-center">
+        <ul className="flex gap-8 justify-center text-md">
           <Link
             href="/"
-            className="font-light text-md hover:text-quaternary hover:underline
+            className="font-light hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="font-light text-md hover:text-quaternary hover:underline
+            className="font-light hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             About
           </Link>
           <Link
             href="/my-projects"
-            className="font-light text-md hover:text-quaternary hover:underline
+            className="font-light hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             My Projects
           </Link>
           <Link
             href="/contact"
-            className="font-light text-md hover:text-quaternary hover:underline
+            className="font-light hover:text-quaternary hover:underline
             dark:hover:text-secondary"
           >
             Contact

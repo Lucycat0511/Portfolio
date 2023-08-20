@@ -9,17 +9,19 @@ export default function About() {
   });
   return (
     <div ref={ref} className="flex w-full justify-center">
-      <div className="flex flex-col gap-8  w-3/5">
+      <div className="flex flex-col gap-8  w-4/5 ">
         <h1
           className={`self-left text-2xl font-bold
         ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
         transition-all ease-out delay-200 duration-1000`}
         >
           About Me
+          <hr />
         </h1>
+
         <div className="flex gap-8">
           <div
-            className={`flex flex-col gap-2 leading-7 w-4/5
+            className={`flex flex-col gap-2 leading-7 w-full md:w-4/5
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
             transition-all ease-out duration-1000`}
           >
@@ -92,7 +94,10 @@ export default function About() {
               <br />
               ~languages I use and plan to learn~ */}
           </div>
-          <div className="h-full px-4 flex flex-col gap-8  w-1/5 text-xs rounded-2xl">
+          <div
+            className="h-full px-4 hidden flex-col gap-8  w-1/5 text-xs rounded-2xl
+          md:flex"
+          >
             <div
               className={`flex flex-col gap-1 text-center
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}

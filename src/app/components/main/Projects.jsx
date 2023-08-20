@@ -39,15 +39,18 @@ export default function Projects() {
     triggerOnce: true,
   });
   return (
-    <div ref={ref} className="flex flex-col gap-8 w-full">
-      <h1
-        className={`self-left text-2xl font-bold
+    <div ref={ref} className="flex flex-col gap-8 w-full items-center">
+      <div className="self-left md:w-full w-4/5 flex flex-col">
+        <h1
+          className={`text-2xl font-bold
         ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
         transition-all ease-out delay-500 duration-1000`}
-      >
-        My Projects
-      </h1>
-      <div className="flex flex-col gap-40 w-full">
+        >
+          My Projects
+          <hr />
+        </h1>
+      </div>
+      <div className="flex flex-col md:gap-40 gap-24 w-4/5 md:w-full">
         {projects.map((project, index) => {
           const isEven = index % 2 === 0;
           return (
