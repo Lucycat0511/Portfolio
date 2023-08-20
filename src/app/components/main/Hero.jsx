@@ -8,12 +8,12 @@ function Profile() {
         className={`w-full aspect-square rounded-full  bg-secondary
   group-hover:translate-x-2 group-hover:translate-y-2
   dark:bg-tertiary
-  transition-all ease-out duration-200`}
+  move-and-fade ease-out duration-200`}
       ></div>
       <Image
         className={`group absolute -top-2 -left-2 w-full aspect-square rounded-full  object-cover object-center
     group-hover:-translate-x-2 group-hover:-translate-y-2
-    transition-all ease-out duration-200
+    move-and-fade ease-out duration-200
     `}
         src="/assets/profile.jpeg"
         alt="profile picture"

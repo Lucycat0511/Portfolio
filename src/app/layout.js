@@ -33,7 +33,9 @@ export default function RootLayout({ children }) {
       >
         <DarkModeSwitch />
         <Navbar />
-        <main className="flex flex-col gap-52 md:mx-body my-8">{children}</main>
+        <main className="flex flex-col gap-52 md:mx-body my-8 transition-colors duration-200">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

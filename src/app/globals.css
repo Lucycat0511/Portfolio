@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.move-and-fade {
+  transition-property: transform, opacity;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

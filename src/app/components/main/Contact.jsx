@@ -15,7 +15,7 @@ export default function Contact() {
       ref={ref}
       className={`flex flex-col items-center gap-12
       ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-      transition-all ease-out duration-1000`}
+      move-and-fade ease-out duration-1000`}
     >
       <h1 className="text-2xl font-bold">Get In Touch!</h1>
       <div className="w-3/5">

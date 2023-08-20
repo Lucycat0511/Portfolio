@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
-export default function About() {
+export default function About({ shorten }) {
   const { ref, inView, entry } = useInView({
     threshold: 0.3,
     triggerOnce: true,
@@ -13,7 +14,7 @@ export default function About() {
         <h1
           className={`self-left text-2xl font-bold
         ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-        transition-all ease-out delay-200 duration-1000`}
+        move-and-fade ease-out delay-200 duration-1000`}
         >
           About Me
           <hr />
@@ -23,7 +24,7 @@ export default function About() {
           <div
             className={`flex flex-col gap-2 leading-7 w-full md:w-4/5
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-            transition-all ease-out duration-1000`}
+            move-and-fade ease-out duration-1000`}
           >
             <p>
               I wasn’t always interested in web development, nor am I from Hyde
@@ -46,27 +47,33 @@ export default function About() {
               horizons! That’s when I took my first Plant Biology class and fell
               in love with the world of plants!
             </p>
-            <p>
-              I decided to further my career in Botany, and enrolled at the
-              University of Maine. I went on to attain my degree and found the
-              love of my love while I was at it! Her name is Hana, she is the
-              most important person to me and pushes me to this day to pursue my
-              interests. Once I graduated, I still felt unsure, and I needed a
-              masters if I wanted to continue my research. I didn’t have the
-              money and I felt like I needed a change, so I moved to Hyde Park,
-              NY and enrolled at the Culinary Institute of America. Probably not
-              the wisest decision as I was flat out broke, and now have a bit of
-              student loan debt.
-            </p>
-            <p>
-              My time at CIA was splendid and I learned valuable skills that not
-              only apply to the kitchen. Alas, I only stayed for a semester as
-              financials began overwhelm me. I continued to pursue a career in
-              the food industry, working at Beekman Arms, and I enjoy my work!
-              The thing with working in a kitchen is that it’s physically and
-              mentally taxing to a degree that I don’t think I can see myself
-              doing for the rest of my life. *Thus, Web Development walks in.*
-            </p>
+            {!shorten && (
+              <>
+                <p>
+                  I decided to further my career in Botany, and enrolled at the
+                  University of Maine. I went on to attain my degree and found
+                  the love of my love while I was at it! Her name is Hana, she
+                  is the most important person to me and pushes me to this day
+                  to pursue my interests. Once I graduated, I still felt unsure,
+                  and I needed a masters if I wanted to continue my research. I
+                  didn’t have the money and I felt like I needed a change, so I
+                  moved to Hyde Park, NY and enrolled at the Culinary Institute
+                  of America. Probably not the wisest decision as I was flat out
+                  broke, and now have a bit of student loan debt.
+                </p>
+                <p>
+                  My time at CIA was splendid and I learned valuable skills that
+                  not only apply to the kitchen. Alas, I only stayed for a
+                  semester as financials began overwhelm me. I continued to
+                  pursue a career in the food industry, working at Beekman Arms,
+                  and I enjoy my work! The thing with working in a kitchen is
+                  that it’s physically and mentally taxing to a degree that I
+                  don’t think I can see myself doing for the rest of my life.
+                  *Thus, Web Development walks in.*
+                </p>
+              </>
+            )}
+
             <p>
               I needed a career switch and I went with ole reliable. I made a
               complete circle and went back to programming. I decided to take a
@@ -83,16 +90,13 @@ export default function About() {
               websites. Now I look to the future and a hopeful career shift.
             </p>
 
-            {/* Hi! My name is Zachary Maynor. I really enjoy building clean
-              looking ad well-put-together websites!
-              <br />
-              ~how i started ie. highschool, journey through college~
-              <br />
-              ~how i ended up here and why?~
-              <br />
-              ~my focus~
-              <br />
-              ~languages I use and plan to learn~ */}
+            <Link
+              href="/about"
+              className="font-light hover:text-quaternary hover:underline
+            dark:hover:text-secondary"
+            >
+              Read More
+            </Link>
           </div>
           <div
             className="h-full px-4 hidden flex-col gap-8  w-1/5 text-xs rounded-2xl
@@ -101,7 +105,7 @@ export default function About() {
             <div
               className={`flex flex-col gap-1 text-center
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-            transition-all ease-out delay-[700ms] duration-1000`}
+            move-and-fade ease-out delay-[700ms] duration-1000`}
             >
               <i className="devicon-javascript-plain text-6xl"></i>
               <span>Javascript</span>
@@ -109,7 +113,7 @@ export default function About() {
             <div
               className={`flex flex-col gap-1 text-center
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-            transition-all ease-out delay-[900ms] duration-1000`}
+            move-and-fade ease-out delay-[900ms] duration-1000`}
             >
               <i className="devicon-react-original text-6xl"></i>
               <span>React</span>
@@ -117,7 +121,7 @@ export default function About() {
             <div
               className={`flex flex-col gap-1 text-center
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-            transition-all ease-out delay-[1100ms] duration-1000`}
+            move-and-fade ease-out delay-[1100ms] duration-1000`}
             >
               <i className="devicon-tailwindcss-plain text-6xl"></i>
               <span>Tailwind</span>
@@ -125,19 +129,19 @@ export default function About() {
             <div
               className={`flex flex-col gap-1 text-center
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-            transition-all ease-out delay-[1300ms] duration-1000`}
+            move-and-fade ease-out delay-[1300ms] duration-1000`}
             >
-              <i className="devicon-nextjs-original text-6xl"></i>
-              <span>Next.js</span>
+              <i className="devicon-git-plain text-6xl"></i>
+              <span>Git</span>
             </div>
             <div
               className={`flex flex-col gap-1 text-center
             ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-            transition-all ease-out delay-[1500ms] duration-1000`}
+            move-and-fade ease-out delay-[1500ms] duration-1000`}
             >
-              <i className="devicon-typescript-plain text-6xl"></i>
+              <i className="devicon-firebase-plain text-6xl"></i>
 
-              <span>Typescript</span>
+              <span>Firebase</span>
             </div>
           </div>
         </div>

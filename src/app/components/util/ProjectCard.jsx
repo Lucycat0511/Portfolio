@@ -20,7 +20,7 @@ export default function ProjectCard({
         rightOrientation && "md:flex-row-reverse"
       }
       ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-      transition-all ease-out delay-200 duration-1000
+      move-and-fade ease-out delay-200 duration-1000
       `}
     >
       <h2 className="text-xl font-semibold mb-2 md:hidden">{title}</h2>
@@ -32,7 +32,7 @@ export default function ProjectCard({
           className={`object-cover h-full w-full absolute aspect-square border-secondary border-2 rounded-2xl
             hover:-translate-x-2 hover:-translate-y-2
             dark:border-tertiary
-            transition-all ease-out duration-150`}
+            move-and-fade ease-out duration-150`}
           src={imgURL}
           alt="project image"
           width={9999}

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
+      <About shorten />
       <Projects />
       <Contact />
     </>
