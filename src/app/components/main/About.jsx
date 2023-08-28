@@ -13,7 +13,11 @@ export default function About({ shorten }) {
       <div className="flex flex-col gap-8  w-4/5 ">
         <h1
           className={`self-left text-2xl font-bold
-        ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
+        ${
+          inView
+            ? "opacity-100 translate-y-0"
+            : "opacity-100 translate-y-0 md:opacity-0 md:translate-y-12"
+        }
         move-and-fade ease-out delay-200 duration-1000`}
         >
           About Me
@@ -23,7 +27,11 @@ export default function About({ shorten }) {
         <div className="flex gap-8">
           <div
             className={`flex flex-col gap-2 leading-7 w-full md:w-4/5
-            ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
+            ${
+              inView
+                ? "opacity-100 translate-y-0"
+                : "opacity-100 translate-y-0 md:opacity-0 md:translate-y-12"
+            }
             move-and-fade ease-out duration-1000`}
           >
             <p>
@@ -92,8 +100,10 @@ export default function About({ shorten }) {
 
             <Link
               href="/about"
-              className="font-light hover:text-quaternary hover:underline
-            dark:hover:text-secondary"
+              className={`font-light hover:text-quaternary hover:underline
+            dark:hover:text-secondary
+            ${!shorten && "hidden"}
+            `}
             >
               Read More
             </Link>

@@ -20,12 +20,11 @@ Feel free to send me an email sometime!</p>
 
 # Roadmap
 
-- make mobile responsive
 - add design-to-code section
 - setup email form functionality
   - validation
 - create custom logo
-- upload resume
 - add the ability to click on projects and be taken to them externally
 - add a minimum of 2 full projects not included the portfolio
 - replace all lorem ipsum with data
+- shorten about section 50-100words

@@ -19,7 +19,11 @@ export default function ProjectCard({
       className={`flex flex-col md:flex-row h-96 ${
         rightOrientation && "md:flex-row-reverse"
       }
-      ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
+      ${
+        inView
+          ? "opacity-100 translate-y-0"
+          : "opacity-100 translate-y-0 md:opacity-0 md:translate-y-12"
+      }
       move-and-fade ease-out delay-200 duration-1000
       `}
     >

@@ -16,7 +16,9 @@ export default function Navbar() {
     move-and-fade ease-linear duration-150 `}
     >
       <div className="flex w-full">
-        <p className="font-semibold text-md w-full md:w-fit">Zachary</p>
+        <Link href="/" className="font-semibold text-md w-full md:w-fit">
+          Zachary
+        </Link>
 
         {/* md navbar */}
         <nav className="grow hidden md:block">
