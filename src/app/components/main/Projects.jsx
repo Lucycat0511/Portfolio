@@ -15,6 +15,14 @@ const projects = [
   //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   // },
   {
+    imgURL: "/assets/WebsiteClone.png",
+    title: "Plantify (eCommerce  Clone)",
+    description:
+      "This is a clone website of https://www.thesill.com/. It mimics the same layout as an eCommerce website with limited access to Shopify. I created this project to show-off my ability to create eCommerce websites and to learn how to use Shopify. Libraries in this project are: FontAwesome, Formik, Yup.",
+    languages: ["React", "Tailwind CSS", "Shopify"],
+    link: "https://main--chic-truffle-3a5fa4.netlify.app/",
+  },
+  {
     imgURL: "",
     title: "Expense Tracker *(WIP)",
     description:

@@ -5,14 +5,14 @@ import { useState } from "react";
 export default function DarkModeSwitch() {
   const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className="fixed flex flex-col bottom-4 left-4">
+    <div className="fixed flex flex-col bottom-4 left-2">
       <p style={{ writingMode: "vertical-rl" }} className=" mb-4">
         {darkMode ? "Dark" : "Light"} Mode
       </p>
       <input
         id="darkModeSwitch"
         type="checkbox"
-        className="absolute overflow-hidden w-[1px] h-[1px] left-4"
+        className="hidden"
         onChange={() => {
           document.documentElement.classList.toggle("dark");
           setDarkMode(!darkMode);
