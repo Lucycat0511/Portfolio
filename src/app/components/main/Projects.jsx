@@ -18,36 +18,9 @@ const projects = [
     imgURL: "/assets/WebsiteClone.png",
     title: "Plantify (eCommerce  Clone)",
     description:
-      "This is a clone website of https://www.thesill.com/. It mimics the same layout as an eCommerce website with limited access to Shopify. I created this project to show-off my ability to create eCommerce websites and to learn how to use Shopify. Libraries in this project are: FontAwesome, Formik, Yup.",
+      "This is a 1 dimensional clone website of https://www.thesill.com/. It mimics the same responsive layout as an eCommerce website.",
     languages: ["React", "Tailwind CSS", "Shopify"],
     link: "https://main--chic-truffle-3a5fa4.netlify.app/",
-  },
-  {
-    imgURL: "",
-    title: "Expense Tracker *(WIP)",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    languages: ["React", "Tailwind CSS", "Firebase"],
-    story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    imgURL: "",
-    title: "eCommerce Landing Page *(WIP)",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    languages: ["React", "Tailwind CSS"],
-    story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    imgURL: "",
-    title: "Simple Platform Game *(WIP)",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    languages: ["React", "Tailwind CSS"],
-    story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 ];
 const designs = [
@@ -90,7 +63,7 @@ export default function Projects() {
             />
           );
         })}
-        <div className="w-full md:w-full flex flex-col items-center gap-8">
+        {/* <div className="w-full md:w-full flex flex-col items-center gap-8">
           <h2 className="text-2xl font-bold">Design - To - Code</h2>
           <hr />
           <div
@@ -107,7 +80,7 @@ export default function Projects() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Design to code snippets */}

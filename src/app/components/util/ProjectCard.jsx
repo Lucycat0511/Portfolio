@@ -31,7 +31,7 @@ export default function ProjectCard({
       <h2 className="text-xl font-semibold mb-2 md:hidden">{title}</h2>
       <Link href={`${link}`}>
         <div
-          className="relative w-full md:w-3/5 bg-secondary h-full rounded-2xl
+          className="relative w-full bg-secondary h-full rounded-2xl
       dark:bg-tertiary"
         >
           <Image
@@ -49,7 +49,7 @@ export default function ProjectCard({
       </Link>
 
       <div
-        className={`w-full md:w-2/5 z-10  overflow-clip ${
+        className={`w-full md:w-2/5 z-10 ${
           rightOrientation ? "md:mr-auto" : "md:ml-auto md:text-right"
         }`}
       >
@@ -68,7 +68,7 @@ export default function ProjectCard({
             })}
           </div>
           <h2 className="text-xl font-semibold hidden md:block">{title}</h2>
-          <p>{description}</p>
+          <p className="">{description}</p>
         </div>
       </div>
     </div>
