@@ -16,14 +16,14 @@ const projects = [
   // },
 
   {
-    imgURL: "/assets/dndCardCreator.png",
+    imgURL: "/assets/dndCardCreator.jpeg",
     title: "DnD Spell Card Creator",
     description:
       "I built this to make creating spell cards for 'Dungeons and Dragons' easier! Uses dnd5eapi for the data and firebase to store collections. Shows off CRUD, API skills, and DaisyUI utilization.",
     languages: ["React", "Tailwind CSS", "DaisyUI", "Firebase"],
     link: "https://dnd-card-creator.netlify.app/",
   },
-  ~{
+  {
     imgURL: "/assets/WebsiteClone.png",
     title: "Plantify (eCommerce  Clone)",
     description:
